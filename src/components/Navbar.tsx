@@ -32,13 +32,14 @@ const Navbar: React.FC = () => {
     e.preventDefault()
     if(searchQuery.trim()){ navigate(`/shop?q=${encodeURIComponent(searchQuery)}`); setSearchOpen(false); setSearchQuery('') }
   }
+console.log(user);
 
   return (
     <>
       {/* Top bar */}
       <div className="hidden md:block bg-gold-800 text-white text-xs py-2 text-center font-body">
         🌻 Free Delivery on Orders Above ₹999 &nbsp;|&nbsp;
-        <Phone size={11} className="inline mr-1"/>+91-XXXXXXXXXX &nbsp;|&nbsp;
+        <Phone size={11} className="inline mr-1"/>+91-8111068222 &nbsp;|&nbsp;
         info@mmlagrofoods.com
       </div>
 

@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
           <div>
             <h2 style={{fontFamily:"'Playfair Display',serif"}} className="text-3xl font-black text-gray-900 mb-8">Get In Touch</h2>
             <div className="space-y-4 mb-10">
-              {[{I:Phone,l:'Phone',v:'+91-XXXXXXXXXX',h:'tel:+91XXXXXXXXXX'},{I:Mail,l:'Email',v:'info@mmlagrofoods.com',h:'mailto:info@mmlagrofoods.com'},{I:MapPin,l:'Address',v:'Your Business Address, India',h:'#'},{I:Clock,l:'Working Hours',v:'Mon–Sat: 9 AM – 6 PM',h:'#'}].map(({I,l,v,h},i)=>(
+              {[{I:Phone,l:'Phone',v:'+91-8111068222',h:'tel:+91XXXXXXXXXX'},{I:Mail,l:'Email',v:'info@mmlagrofoods.com',h:'mailto:info@mmlagrofoods.com'},{I:MapPin,l:'Address',v:'Your Business Address, India',h:'#'},{I:Clock,l:'Working Hours',v:'Mon–Sat: 9 AM – 6 PM',h:'#'}].map(({I,l,v,h},i)=>(
                 <a key={i} href={h} className="flex items-start gap-4 p-5 bg-white rounded-2xl border-2 border-gold-100 hover:border-gold-400 transition-all group card-hover">
                   <div className="w-12 h-12 rounded-xl gradient-gold flex items-center justify-center shrink-0"><I size={19} className="text-white"/></div>
                   <div><div className="font-body text-xs text-gray-400 mb-0.5">{l}</div><div className="font-body font-semibold text-gray-900 group-hover:text-gold-700 transition-colors">{v}</div></div>

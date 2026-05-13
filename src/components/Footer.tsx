@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-body text-xs font-bold uppercase tracking-widest text-gold-400 mb-5">Contact Us</h4>
             <ul className="space-y-4 mb-5">
-              <li className="flex items-start gap-3"><Phone size={15} className="text-gold-500 mt-0.5 shrink-0"/><span className="font-body text-gray-400 text-sm">+91-XXXXXXXXXX</span></li>
+              <li className="flex items-start gap-3"><Phone size={15} className="text-gold-500 mt-0.5 shrink-0"/><span className="font-body text-gray-400 text-sm">+91-8111068222</span></li>
               <li className="flex items-start gap-3"><Mail size={15} className="text-gold-500 mt-0.5 shrink-0"/><a href="mailto:info@mmlagrofoods.com" className="font-body text-gray-400 hover:text-gold-400 text-sm">info@mmlagrofoods.com</a></li>
               <li className="flex items-start gap-3"><MapPin size={15} className="text-gold-500 mt-0.5 shrink-0"/><span className="font-body text-gray-400 text-sm">Your Business Address, India</span></li>
             </ul>
