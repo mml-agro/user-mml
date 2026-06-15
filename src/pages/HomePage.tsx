@@ -72,13 +72,29 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-
+      
       {/* MARQUEE STRIP */}
       <div className="bg-gold-700 py-3 overflow-hidden">
-        <div className="flex gap-8 animate-[shimmer_20s_linear_infinite] whitespace-nowrap">
-          {Array.from({ length: 4 }).flatMap(() => ['✅ Premium Quality Seeds', '⚡ Advanced Refining Technology', '💊 Rich in Vitamin E', '🧴 Hygienically Packed', '❤️ Heart Healthy', '🚚 Free Delivery Above ₹999', '🔒 FSSAI Certified', '👨‍👩‍👧‍👦 10,000+ Happy Families']).map((t, i) => (
-            <span key={i} className="font-body text-white/90 font-medium text-sm">{t}</span>
-          ))}
+        <div className="flex gap-8 whitespace-nowrap animate-[marquee_20s_linear_infinite]">
+          {Array.from({ length: 4 })
+            .flatMap(() => [
+              '✅ Premium Quality Seeds',
+              '⚡ Advanced Refining Technology',
+              '💊 Rich in Vitamin E',
+              '🧴 Hygienically Packed',
+              '❤️ Heart Healthy',
+              '🚚 Free Delivery Above ₹999',
+              '🔒 FSSAI Certified',
+              '👨‍👩‍👧‍👦 10,000+ Happy Families'
+            ])
+            .map((t, i) => (
+              <span
+                key={i}
+                className="font-body text-white/90 font-medium text-sm"
+              >
+                {t}
+              </span>
+            ))}
         </div>
       </div>
 

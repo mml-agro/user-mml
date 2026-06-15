@@ -37,7 +37,6 @@ const ShopPage: React.FC = () => {
     const q = new URLSearchParams(location.search).get('q')
     if (q) setSearch(q)
   }, [location.search])
-  console.log("products?.content=======>", products);
 
   const cats = [
     {

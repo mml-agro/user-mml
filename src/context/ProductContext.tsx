@@ -21,7 +21,6 @@ export const ProductProvider = ({ children }: any) => {
             setLoading(true);
 
             const response = await getProductsAPI(currentPage, limit);
-            console.log(response?.data);
 
             const newProducts = response?.data || [];
 

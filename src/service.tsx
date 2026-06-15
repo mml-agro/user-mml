@@ -129,6 +129,17 @@ export async function getCartAPI() {
     }
 }
 
+export async function clearCartAPI() {
+    try {
+        let endPoint = `cart`;
+        const response = await instance.delete(endPoint);
+        return response;
+    } catch (e) {
+        console.log(e + ' Occured! Please Try again');
+        throw e;
+    }
+}
+
 export async function removeCartAPI(cartItemId: string) {
     try {
         let endPoint = `cart/${cartItemId}`;
@@ -173,7 +184,7 @@ export async function postAddressAPI(reqData: any) {
     }
 }
 
-export async function deleteAddressAPI(id:any) {
+export async function deleteAddressAPI(id: any) {
     try {
         let endPoint = `addresses/${id}`;
         const response = await instance.delete(endPoint);
@@ -184,7 +195,7 @@ export async function deleteAddressAPI(id:any) {
     }
 }
 
-export async function editAddressAPI(id:any, reqData: any) {
+export async function editAddressAPI(id: any, reqData: any) {
     try {
         let endPoint = `addresses/${id}`;
         const response = await instance.put(endPoint, reqData);
@@ -195,3 +206,57 @@ export async function editAddressAPI(id:any, reqData: any) {
     }
 }
 
+export async function addOrdersAPI(reqData: any) {
+    try {
+        let endPoint = `orders`;
+        const response = await instance.post(endPoint, reqData);
+        return response;
+    } catch (e) {
+        console.log(e + ' Occured! Please Try again');
+        throw e;
+    }
+}
+
+export async function getCouponsAPI() {
+    try {
+        let endPoint = `coupons`;
+        const response = await instance.get(endPoint);
+        return response;
+    } catch (e) {
+        console.log(e + ' Occured! Please Try again');
+        throw e;
+    }
+}
+
+export async function getValidateAPI(reqData: any) {
+    try {
+        let endPoint = `coupons/validate`;
+        const response = await instance.post(endPoint, reqData);
+        return response;
+    } catch (e) {
+        console.log(e + ' Occured! Please Try again');
+        throw e;
+    }
+}
+
+export async function getOrdersAPI(page: number, size: number) {
+    try {
+        let endPoint = `orders/my?page=${page}&size=${size}`;
+        const response = await instance.get(endPoint);
+        return response;
+    } catch (e) {
+        console.log(e + ' Occured! Please Try again');
+        throw e;
+    }
+}
+
+export async function postReviewsAPI(reqData: any) {
+    try {
+        let endPoint = `reviews`;
+        const response = await instance.post(endPoint, reqData);
+        return response;
+    } catch (e) {
+        console.log(e + ' Occured! Please Try again');
+        throw e;
+    }
+}
